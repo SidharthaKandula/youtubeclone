@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;  
+            align-items: center;  
+            padding: 10px;
+            background-color: #f8f8f8;
+            position: sticky;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 30px;
+            margin-right: 10px;
+            background-color: white;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        
+        .search-container {
+            display: flex;
+            justify-content: center;  
+            flex: 1;  
+        }
+
+        .search-container input {
+            height: 30px;
+            width: 200px;
+            padding: 1px;
+            font-size: 16px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+            justify-content: flex-end;  
+        }
+
+        .navbar li {
+            font-size: 18px;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            color: #007bff;
+        }
+        
+        .container1 {
+            display: grid;
+            column-gap: 50px;
+            grid-template-columns: repeat(3, 1fr); 
+            padding: 10px;
+            height: 350px;
+        }
+        .last1{
+            display: grid;
+            column-gap: 50px;
+            grid-template-columns: repeat(4, 1fr); 
+            padding: 10px;
+            height: 250px;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+        }
+
+        .box2, .box3, .box4 {
+            height: 270px;
+            width: 100%;
+        }
+
+        .box2 img, .box3 img, .box4 img {
+            width: 100%;
+            height: 270px;
+        }
+        .input1{
+            height: 60px;
+            width: 250px;
+            padding: 2px;
+        }
+        .input2{
+            height: 60px;
+            width: 250px;
+            padding: 2px;
+        }
+        .input3{
+            height: 60px;
+            width: 250px;
+            padding: 2px;
+        }
+        .input4{
+            height: 60px;
+            width: 250px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="http://codedale.in/assets/img/logo/logo1.png" alt="Codedale Logo">Codedale
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Internships</a></li>
+                <li><a href="#">Certificates</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container1" style="background-color: aquamarine;">
+        <div class="box2" style="order: 3">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.XGWiQUGa5VxkzH3ws0BdRQHaE8&pid=Api&P=0&h=220"/>
+            <h3>Dodagatta Nihar</h3>
+            <p>Full Stack Developer</p>
+        </div>
+        <div class="box3" style="order: 2">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.S5tCT8v0FnBpjPTYigP5gwHaNJ&pid=Api&P=0&h=220"/>
+            <h3>GB Harsha Vardhan</h3>
+            <p>Backend Developer</p>
+        </div>
+        <div class="box4" style="order: 1">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.zeIqomsL3ftXpUEaXAIaJwAAAA&pid=Api&P=0&h=220">
+            <h3>Vasanth Kumar</h3>
+            <p>Designer and DSA Expert</p>
+        </div>
+    </div>
+    <div>
+        <h1>Contact Us Today and get Free Consultation</h1>
+        <div class="input1" style="width: 30vw;">
+            <input type="text" placeholder="Name"/>
+        </div>
+        <div class="input2" style="width: 30vw;">
+            <input type="text" placeholder="PhoneNumber"/>
+        </div>
+        <div class="input3" style="width: 30vw;">
+            <input type="text" placeholder="Subject"/>
+        </div>
+        <div class="input4" style="width: 130vw;">
+            <input type="text" placeholder="Course"/>
+        </div>
+    </div>
+    <div class="last1">
+        <div class="about" style="order:1;">
+            <h2>About</h2>
+            <p>Codedale Technologies is an Indian-based information technology service and solution provider.
+                We focus on valuable contributions toward emerging technologies and solutions,
+                best practices providing smooth progress of the society,
+                the endeavor and, the world.</p>
+        </div>
+        <div class="link" style="order:2;">
+            <h2>Link</h2>
+            <p>
+                Web-Ecommerce Services
+                Mobile App Development
+                Job oriented Software Training
+                Audio and Video production
+            </p>
+        </div>
+        <div class="services" style="order:3;">
+            <h2>Services</h2>
+            <p>Home
+                Services
+                About us
+                Team
+                Career</p>
+        </div>
+        <div class="contacts" style="order:4;">
+            <h2>Contacts</h2>
+            <p>
+                Codedale Technologies
+                No. 4/461, 2nd Floor, Suite No.1279
+                 Valamkottil Towers, Judgemukku,
+                Kakkanad, Kochi - 682021
+
+                +91 98477 52860
+                info@codedale.in
+            </p>
+        </div>
+    </div>
+</body>
+</html>
