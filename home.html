@@ -1,104 +1,184 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            .navbar {
-                display: flex;      
-                flex-direction: row;
-                justify-content: flex-start;
-            }
-            .container1 {
-                display: flex;      
-                flex-direction: row;
-                justify-content: flex-start;
-                padding-top: 10px;
-            }
-            .iteams{
-                padding: 1px;
-                display: flex;      
-                flex-direction: row;
-                justify-content: flex-start;
-            }
-            .image{
-                height: 9px;
-                width: 250px;
-                padding: 20px;
-                margin-top: 10px;    
-                margin-right: 15px;  
-                margin-bottom: 10px; 
-                margin-left: 15px;
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Home Icon Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-            }
-        </style>
-    </head>
-    <body>
-        <nav>
-            <div class="navbar">
-                    <a href="#">
-                        <img style="height: 70px;width: 150px;padding: 10px;" src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo-2017-present.jpg" alt="You Tube logo">
-                    </a>
-                    <input  class="image" style="padding-top:25px;" type="text" placeholder="Search">
-                    <ul>
-                        <div class="iteams">
-                        <li style="padding: 22px;"><a href="">Home</a></li>
-                        <li style="padding: 22px;"><a href="#">Shorts</a></li>
-                        <li style="padding: 22px;"><a href="#">Subsricption</a></li>
-                        <li style="padding: 22px;"><a href="#">You</a></li>
-                    </div>
-                    </ul>
-                </div>
-        </nav>
-        <div class="container" style="padding: 5px;">
-            <iteams style="padding-left: 75px;">All</iteams>
-            <iteams style="padding-left: 75px;">Music</iteams>
-            <iteams style="padding-left: 75px;">Telugu Movies</iteams>
-            <iteams style="padding-left: 75px;">News</iteams>
-            <iteams style="padding-left: 75px;">IPL</iteams>
-            <iteams style="padding-left: 75px;">Lives</iteams>
-        </div>
-        <div class="container1">
-           <div>
-           <img src="https://images.yourstory.com/cs/2/a09f22505c6411ea9c48a10bad99c62f/creators-011-1634830656390-1634917272767.jpg?fm=png&auto=format" style="height: 170px;width: 150px;padding-left: 45px;">
-           <h4 style="padding-left:40px;">Channel Begin</h4>
-           <p style="padding-left:40px;">70k views</p>
-           </div>
-           <div>
-           <img src="https://i.ytimg.com/vi/4leHyYVABAE/maxresdefault.jpg" style="height: 170px;width: 150px;padding-left: 45px;">
-           <h4 style="padding-left:40px;">Youtube songs</h4>
-           <p style="padding-left:40px;">40k views</p>
-        </div>
-           <div>
-           <img src="https://www.lyricsstop.com/wp-content/uploads/2021/01/Top-YouTube-Creators-In-India-768x432.jpg" style="height: 170px;width: 150px;padding-left: 45px;">
-           <h4 style="padding-left:40px;">Good News</h4>
-           <p style="padding-left:40px;">50k views</p>
-        </div>
-           <div>
-           <img src="https://www.risefuel.com/hubfs/What%20Is%20A%20Content%20Creator-2-1.jpeg" style="height: 170px;width: 150px;padding-left: 45px;">
-           <h4 style="padding-left:40px;">Na Anveshanaa</h4>
-           <p style="padding-left:40px;">970k views</p>
-        </div>
-        </div>
-        <div class="container1">
-            <div>
-            <img src="https://i.ytimg.com/vi/lqWJ87XJjYY/maxresdefault.jpg" style="height: 170px;width: 150px;padding-left: 45px;">
-            <h4 style="padding-left:40px;">Sunny Arrest</h4>
-            <p style="padding-left:40px;">70k views</p>
+    <style>
+      .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+      .container1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-top: 10px;
+      }
+      .items {
+        padding: 1px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+      .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+      .image {
+        height: 9px;
+        width: 250px;
+        padding: 20px;
+        margin-top: 10px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+      }
+      .search-icon {
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+
+      .search-icon:hover {
+        color: #101315;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <a href="#">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
             </div>
-            <div>
-            <img src="https://tse3.mm.bing.net/th?id=OIP.qDmRwLrj6iPYV1qI5FfHmgHaE7&pid=Api&P=0&h=220" style="height: 170px;width: 150px;padding-left: 45px;">
-            <h4 style="padding-left:40px;">KCR Home</h4>
-            <p style="padding-left:40px;">80k views</p>
-         </div>
-            <div>
-            <img src="https://www.telugupost.com/h-upload/2022/02/17/1325858-revanth-reddy-pcc-chief-arrest-telangana.jpg" style="height: 170px;width: 150px;padding-left: 45px;">
-            <h4 style="padding-left:40px;">Reventh Arrest</h4>
-            <p style="padding-left:40px;">50k views</p>
-         </div>
-            <div>
-            <img src="https://i.ytimg.com/vi/SCk6vFGYuSU/maxresdefault.jpg"style="height: 170px;width: 150px;padding-left: 45px;">
-            <h4 style="padding-left:40px;">Jagan Speech</h4>
-            <p style="padding-left:40px;">970k views</p>
-         </div>
-         </div>
-    </body>
+          </nav>
+          <img style="height: 70px;width: 150px;padding: 10px;" src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo-2017-present.jpg" alt="YouTube Logo">
+        </a>
+        <input class="image" style="height: 30px;padding-top:25px;border-radius: 12px;" type="text" placeholder="Search">
+        <div class="search-icon">
+          🔍
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="padding: 5px; font-style: italic;font-weight: bold;">
+      <div class="items">
+        <p style="padding-left: 75px;">All</p>
+        <p style="padding-left: 75px;">Music</p>
+        <p style="padding-left: 75px;">Telugu Movies</p>
+        <p style="padding-left: 75px;">News</p>
+        <p style="padding-left: 75px;">IPL</p>
+        <p style="padding-left: 75px;">Lives</p>
+      </div>
+    </div>
+
+    <div class="container1">
+      <div class="item">
+        <ul>
+          <li style="padding: 22px; padding-top: 60px;">
+            <a href="home.html">Home Page</a>
+          </li>
+          <li style="padding: 22px; padding-top: 60px;">
+            <a href="shorts.html">Shorts</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-2 mb-6">
+          <img src="https://i.ytimg.com/vi/AE6M3hcHnyw/maxresdefault.jpg" style="height: 170px;width: 250px;padding-left: 25px;" alt="Channel Begin">
+          <h4 style="padding-left:40px;">Channel Begin</h4>
+          <p style="padding-left:40px;">70k views</p>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2 mb-6">
+          <img src="https://static.toiimg.com/thumb/msid-52687632,imgsize-52705,width-400,resizemode-4/52687632.jpg" style="height: 170px;width: 250px;padding-left: 25px;" alt="YouTube songs">
+          <h4 style="padding-left:40px;">YouTube songs</h4>
+          <p style="padding-left:40px;">40k views</p>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2 mb-6">
+          <img src="https://i.ytimg.com/vi/dndQlZC20B8/hq720.jpg?v=67c6693e&sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAMX57aryPbpc6bcDb8jWYP3xzXDA" style="height: 170px;width: 250px;padding-left: 25px;" alt="Good News">
+          <h4 style="padding-left:40px;">Good News</h4>
+          <p style="padding-left:40px;">50k views</p>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2 mb-6">
+          <img src="https://i.ytimg.com/vi/twU3uxHdROo/maxresdefault.jpg" style="height: 170px;width: 250px;padding-left: 25px;" alt="YouTube songs">
+          <h4 style="padding-left:40px;">YouTube songs</h4>
+          <p style="padding-left:40px;">40k views</p>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2 mb-6">
+          <img src="https://images.tv9telugu.com/wp-content/uploads/2023/09/youtube-2.jpg" style="height: 170px;width: 250px;padding-left: 25px;" alt="Good News">
+          <h4 style="padding-left:40px;">Good News</h4>
+          <p style="padding-left:40px;">50k views</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container1">
+      <div class="items">
+        <ul>
+          <li style="padding: 22px;">
+            <a href="subscription.html">Subscription</a>
+          </li>
+          <li style="padding: 22px;padding-top: 60px;">
+            <a href="you.html">You</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-2 mb-6">
+          <img src="https://i.ytimg.com/vi/-VI-fDAlgeA/maxresdefault.jpg?v=67d171c0" style="height: 170px;width: 250px;padding-left: 25px;" alt="Sunny Arrest">
+          <h4 style="padding-left:40px;">Sunny Arrest</h4>
+          <p style="padding-left:40px;">70k views</p>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2 mb-6">
+          <img src="https://i.ytimg.com/vi/yEX8mj7ai3o/maxresdefault.jpg" style="height: 170px;width: 250px;padding-left: 25px;" alt="KCR Home">
+          <h4 style="padding-left:40px;">KCR Home</h4>
+          <p style="padding-left:40px;">80k views</p>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2 mb-6">
+          <img src="https://i.ytimg.com/vi/W1an6HLdTNw/maxresdefault.jpg" style="height: 170px;width: 250px;padding-left: 25px;" alt="Reventh Arrest">
+          <h4 style="padding-left:40px;">Reventh Arrest</h4>
+          <p style="padding-left:40px;">50k views</p>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2 mb-6">
+          <img src="https://i.ytimg.com/vi/yEX8mj7ai3o/maxresdefault.jpg" style="height: 170px;width: 250px;padding-left: 25px;" alt="KCR Home">
+          <h4 style="padding-left:40px;">KCR Home</h4>
+          <p style="padding-left:40px;">80k views</p>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2 mb-6">
+          <img src="https://i.ytimg.com/vi/W1an6HLdTNw/maxresdefault.jpg" style="height: 170px;width: 250px;padding-left: 25px;" alt="Reventh Arrest">
+          <h4 style="padding-left:40px;">Reventh Arrest</h4>
+          <p style="padding-left:40px;">50k views</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>

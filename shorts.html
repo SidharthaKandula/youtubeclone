@@ -1,104 +1,170 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-            .navbar {
-                display: flex;      
-                flex-direction: row;
-                justify-content: flex-start;
-            }
-            .container1 {
-                display: flex;      
-                flex-direction: row;
-                justify-content: flex-start;
-                padding-top: 10px;
-            }
-            .iteams{
-                padding: 1px;
-                display: flex;      
-                flex-direction: row;
-                justify-content: flex-start;
-            }
-            .image{
-                height: 9px;
-                width: 250px;
-                padding: 20px;
-                margin-top: 10px;    
-                margin-right: 15px;  
-                margin-bottom: 10px; 
-                margin-left: 15px;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;      
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+        }
+        .navbar img {
+            height: 70px;
+            width: 150px;
+            margin-right: 15px;
+        }
+        .search-bar {
+            padding: 8px;
+            margin-right: 15px;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+            width: 250px;
+        }
+        .navbar ul {
+            display: flex;
+            margin-left: auto;
+        }
+        .navbar ul li {
+            list-style: none;
+            padding: 15px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .container {
+            padding: 20px 10px;
+        }
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .categories div {
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .categories div:hover {
+            color: #ff0000;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .video-item {
+            text-align: center;
+            margin-bottom: 20px;
+            width: 200px;
+        }
+        .video-item img {
+            width: 100%;
+            height: 170px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .video-item h4 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .video-item p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
 
-            }
-        </style>
-    </head>
-    <body>
-        <nav>
-            <div class="navbar">
-                    <a href="#">
-                        <img style="height: 70px;width: 150px;padding: 10px;" src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo-2017-present.jpg" alt="You Tube logo">
-                    </a>
-                    <input  class="image" style="padding-top:25px;" type="text" placeholder="Search">
-                    <ul>
-                        <div class="iteams">
-                        <li style="padding: 22px;"><a href="">Home</a></li>
-                        <li style="padding: 22px;"><a href="#">Shorts</a></li>
-                        <li style="padding: 22px;"><a href="#">Subsricption</a></li>
-                        <li style="padding: 22px;"><a href="#">You</a></li>
-                    </div>
-                    </ul>
-                </div>
-        </nav>
-        <div class="container" style="padding: 5px;">
-            <iteams style="padding-left: 75px;">All</iteams>
-            <iteams style="padding-left: 75px;">Music</iteams>
-            <iteams style="padding-left: 75px;">Telugu Movies</iteams>
-            <iteams style="padding-left: 75px;">News</iteams>
-            <iteams style="padding-left: 75px;">IPL</iteams>
-            <iteams style="padding-left: 75px;">Lives</iteams>
+    <nav class="navbar">
+        <a href="#">
+            <img src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo-2017-present.jpg" alt="YouTube logo">
+        </a>
+        <input type="text" class="search-bar" placeholder="Search">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shorts</a></li>
+            <li><a href="#">Subscription</a></li>
+            <li><a href="#">You</a></li>
+        </ul>
+    </nav>
+
+    <div class="container categories">
+        <div>All</div>
+        <div>Music</div>
+        <div>Telugu Movies</div>
+        <div>News</div>
+        <div>IPL</div>
+        <div>Lives</div>
+    </div>
+
+    <div class="container video-container">
+
+        <div class="video-item">
+            <img src="https://i.ytimg.com/vi/_P4YBSM5mh4/maxresdefault.jpg" alt="Channel Begin">
+            <h4>Channel Begin</h4>
+            <p>70k views</p>
         </div>
-        <div class="container1">
-           <div>
-           <img src="https://i.ytimg.com/vi/thtZuM19Qaw/maxresdefault.jpg" style="height: 170px;width: 150px;padding-left: 45px;">
-           <h4 style="padding-left:40px;">Channel Begin</h4>
-           <p style="padding-left:40px;">70k views</p>
-           </div>
-           <div>
-           <img src="https://i.ytimg.com/vi/kXHiIxx2atA/maxresdefault.jpg" style="height: 170px;width: 150px;padding-left: 45px;">
-           <h4 style="padding-left:40px;">Youtube songs</h4>
-           <p style="padding-left:40px;">40k views</p>
+
+        <div class="video-item">
+            <img src="https://i.ytimg.com/vi/BrrWNfjgHGs/maxresdefault.jpg" alt="YouTube Songs">
+            <h4>YouTube Songs</h4>
+            <p>40k views</p>
         </div>
-           <div>
-           <img src="https://tse2.mm.bing.net/th?id=OIP.XB_jkeOk07ChdbEZIojt-wHaD4&pid=Api&P=0&h=220" style="height: 170px;width: 150px;padding-left: 45px;">
-           <h4 style="padding-left:40px;">Good News</h4>
-           <p style="padding-left:40px;">50k views</p>
+
+        <div class="video-item">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.EJR9rG6NvfeD2xM0PJCF9AHaEK&pid=Api&P=0&h=220" alt="Good News">
+            <h4>Good News</h4>
+            <p>50k views</p>
         </div>
-           <div>
-           <img src="https://modelpeeps.com/wp-content/uploads/2023/12/Naa-Anveshana-1.jpg" style="height: 170px;width: 150px;padding-left: 45px;">
-           <h4 style="padding-left:40px;">Na Anveshanaa</h4>
-           <p style="padding-left:40px;">970k views</p>
+
+        <div class="video-item">
+            <img src="https://i.ytimg.com/vi/vr3wHk-NaH4/maxresdefault.jpg" alt="Na Anveshanaa">
+            <h4>Na Anveshanaa</h4>
+            <p>970k views</p>
         </div>
+
+    </div>
+
+    <div class="container video-container">
+
+        <div class="video-item">
+            <img src="https://i.ytimg.com/vi/IP4KI_8my3c/hqdefault.jpg" alt="Sunny Arrest">
+            <h4>Sunny Arrest</h4>
+            <p>70k views</p>
         </div>
-        <div class="container1">
-            <div>
-            <img src="https://i.ytimg.com/vi/YqlR2DhcG8s/maxresdefault.jpg" style="height: 170px;width: 150px;padding-left: 45px;">
-            <h4 style="padding-left:40px;">Sunny Arrest</h4>
-            <p style="padding-left:40px;">70k views</p>
-            </div>
-            <div>
-            <img src="https://www.hindustantimes.com/ht-img/img/2023/06/23/1600x900/KTR-will-be-meeting-Shah-for-the-first-time---Face_1687509235644.jpg" style="height: 170px;width: 150px;padding-left: 45px;">
-            <h4 style="padding-left:40px;">KTR Home</h4>
-            <p style="padding-left:40px;">80k views</p>
-         </div>
-            <div>
-            <img src="https://tse4.mm.bing.net/th?id=OIP.-I0zq5OoXm8hGKRrdDLVFwHaEK&pid=Api&P=0&h=220" style="height: 170px;width: 150px;padding-left: 45px;">
-            <h4 style="padding-left:40px;">Reventh CM</h4>
-            <p style="padding-left:40px;">50k views</p>
-         </div>
-            <div>
-            <img src="https://resize.indiatvnews.com/en/resize/oldbucket/730_-/politicsnational/YSR-Congress-le10326.jpg" style="height: 170px;width: 150px;padding-left: 45px;">
-            <h4 style="padding-left:40px;">Jagan Arrest</h4>
-            <p style="padding-left:40px;">970k views</p>
-         </div>
-         </div>
-    </body>
+
+        <div class="video-item">
+            <img src="https://i.ytimg.com/vi/sA4nRUVa9v4/hqdefault.jpg" alt="KCR Home">
+            <h4>KCR Home</h4>
+            <p>80k views</p>
+        </div>
+
+        <div class="video-item">
+            <img src="https://i.ytimg.com/vi/DqhxtHhfowc/maxresdefault.jpg" alt="Reventh Arrest">
+            <h4>Reventh Arrest</h4>
+            <p>50k views</p>
+        </div>
+
+        <div class="video-item">
+            <img src="https://i.ytimg.com/vi/Qcn-YVpRS20/maxresdefault.jpg" alt="Jagan Speech">
+            <h4>Jagan Speech</h4>
+            <p>970k views</p>
+        </div>
+
+    </div>
+
+</body>
 </html>
